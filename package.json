@@ -1,0 +1,14 @@
+{
+  "name": "photoblog-ejs",
+  "version": "1.0.0",
+  "description": "Photo blog build using Node.Js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Abdulqadir Abuharrus",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
