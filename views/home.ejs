@@ -1,0 +1,103 @@
+<%- include("partials/header") %>
+
+
+
+<!-- INTRO SECTION INCLUDING...INTORDUCTION AND IMAGE -->
+<section id="banner-section">
+  <!-- INTRO BANNER, TITLE, AND STUFF -->
+  <div class="banner">
+    <h1 class="banner-text">Memories From My Travels</h1>
+    <img class="banner-img" src="/images/Gaber-Oun 2017/Surfing landcruiser BW.jpeg" alt="picture of 4x4">
+  </div>
+</section>
+
+<section id="about-section">
+  <div class="container-fluid">
+    <div class="row about">
+      <div class="col-lg-4 about-img">
+        <h2 class="about-header">A Little Something About Me.</h2>
+        <img class="profile-pic" src="/images\Mois\profilepic.png" alt="profile picture">
+      </div>
+      <div class="col-lg-8 about-txt">
+        <p>
+          Hi, I’m Abdulqadir Abuharrus, but go by Abdo.
+          Born and raised in Tripoli, Libya. I grew up camping and swimming
+          along the Mediterranean coast. My dad, who used to be a tour guide,
+          cultivated a love for traveling and all things outdoors.
+          I’ve been incredibly fortunate to have traveled
+          as much as I have at my age. Along the way, I’ve snagged a few photos
+          here & there and would like to share them with you here.
+          <!-- TODO: CLEAN THIS PART UP! -->
+          <br>
+          << Clean This UP!!!>>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION FOR THE GALLERY SHOWCASING COVERS -->
+<section id="showcase-section">
+  <div id="showcase-carousel" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+    <div class="carousel-inner">
+      <!-- CAROUSEL ITEM -->
+      <div class="carousel-item active">
+        <img src="/images\Vancouver\lions gate bridge.jpg" class="carousel-img" alt="photo of Lions Gate bridge">
+        <a class="trip-link" href="vancouver.html">
+          <h3 class="case-header"><em>Vancouver, BC 2021-</em></h3>
+        </a>
+        <p class="case-txt">From my time living & studying in Vancouver, British Columbia.</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="/images\Tunnel Bluffs,BC 2022\DSC02192.JPG" class="carousel-img" alt="Trail sign.">
+        <a class="trip-link" href="#">
+          <h3 class="case-header"><em>Tunnel Bluffs, BC July 2022</em></h3>
+        </a>
+        <p class="case-txt">The Tunnel Bluffs trail leads to a ridge overlooking
+          Howe Sound, BC.</p>
+      </div>
+
+      <div class="carousel-item">
+        <img src="/images\Bin Dqish 2020\bin dqish dune.JPG" class="carousel-img" alt="photo of dune">
+        <a class="trip-link" href="bin dqish 2020.html">
+          <h3 class="case-header"><em>Bin D'qish, Libya 2020</em></h3>
+        </a>
+        <p class="case-txt">The dunes of Bin D'qish mark the end of Al-Hamada Al-Hamra</p>
+      </div>
+
+    </div>
+    <!-- Carousel buttons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#showcase-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#showcase-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+</section>
+
+<section id="gallery-section">
+  <div class="container-fluid">
+    <a href="/gallery">
+      <h2>Gallery</h2>
+    </a>
+  </div>
+  <p>A directory of all my photo albums.</p>
+</section>
+
+<section id="contact-section">
+  <div class="contact-me">
+    <h1>Contact me!</h1>
+    <p class="contact-txt">Whether it's to chat about the places I've been or just wanna
+      preach how great Landcruisers are, feel free to reach out. </p>
+    <a class="btn btn-outline-dark btn-lg" href="mailto:aabuharrus@gmail.com">Email.</a>
+  </div>
+</section>
+
+
+<%- include("partials/footer") %>
