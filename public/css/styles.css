@@ -23,8 +23,8 @@ a:hover {
 .navbar {
   background-color: #EDE4E0;
   border-bottom: 2px solid #C55300;
-  border-radius: 2%;
   margin-bottom: 10px;
+  padding-bottom: 0;
 }
 
 .navbar-toggler {
@@ -33,7 +33,7 @@ a:hover {
 
 .collapse {
   font-size: 1.2rem;
-  background-color: #B2B2B2;
+  background-color: #D6E4E5;
   padding: 1% 3%;
 }
 

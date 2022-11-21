@@ -18,6 +18,7 @@ app.get("/", function(req, res){
   res.render("home");
 });
 
+/* TODO: Retrofit for Express param routing */
 app.get("/gallery", function(req, res){
   res.render("gallery");
 });
