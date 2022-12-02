@@ -96,12 +96,12 @@ a:hover {
 
 /* SHOWCASE section */
 #showcase-section {
-  padding: 2px;
+  
   background-color: #F5EFE6;
 }
 
 .carousel-item {
-  padding: 2% 5%;
+  padding: 0 2%;
 }
 
 .carousel-img {
@@ -113,25 +113,21 @@ a:hover {
   margin: 30px 0 140px;
 }
 
-/* ALBUM SECTION */
-#gallery-section {
-  background-color: #BAD1C2;
-}
-
 /* CONTACT SECTION  */
 #contact-section {
   padding: 2% 5%;
-  background-color: #F5EFE6;
+  background-color: #BAD1C2;
 }
 
 .contact-txt {
   font-size: 1.2rem;
-  margin: 3% 15%
+  margin: 3% 15%;
 }
 
 /* FOOTER SECTIONS */
 #footer-section {
-  background-color: #BAD1C2;
+  border-top: 2px solid #C55300;
+  background-color: inherit;
 }
 
 /* MEDIA QUERY */
