@@ -175,3 +175,12 @@ a:hover {
   margin: 10px;
   background-color: #EFF5F5;
 }
+
+/* ALBUM PAGE SPECIFIC */
+.photoContainer{
+  margin: 5% 0 5% 0;
+  background-color: #D6E4E5;
+}
+.albumPhoto{
+  width: 100%;
+}

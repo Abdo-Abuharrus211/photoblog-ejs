@@ -1,8 +1,24 @@
 <%- include("partials/header") %>
 <div>
-    <h1> <%= albumName %> </h1>
-    <h2> This will display each album's photos</h2>
+    <h1> <%= albumTitle%> </h1>
+    <br>
+    <h3> This will display each album's photos</h3>
     <h3>Add Briefing here...</h3>
+</div>
+
+<div class="container-fluid photoContainer">
+    <div class="row">
+        <div class="col col-lg-4">
+            <img class="albumPhoto" src="/images/Bin Dqish 2020/Camel Horizon.JPG" alt="Photo of camels along the horizon">
+        </div>
+        <div class="col">
+            <img class="albumPhoto" src="" alt="">
+        </div>
+        <div class="col">
+            <img class="albumPhoto" src="/images/Bin Dqish 2020/DSC01825.JPG" alt="">
+        </div>
+
+    </div>
 
 </div>
 <%- include("partials/footer") %>

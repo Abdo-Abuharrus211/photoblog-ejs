@@ -3,6 +3,7 @@ const ejs = require("ejs");
 const mongoose = require("mongoose");
 const app = express();
 const _ = require("lodash");
+const { capitalize, startCase } = require("lodash");
 
 //Set view engine EJS
 app.set('view engine', 'ejs');
@@ -20,32 +21,6 @@ mongoose.connect("mongodb://0.0.0.0:27017/galleryDB", {
   useNewUrlParser: true
 });
 
-//Schemas
-const photoSchema = new mongoose.Schema({
-  name: String
-});
-
-const albumSchema = new mongoose.Schema({
-  name: String,
-  photos: [photoSchema]
-});
-//Models
-const Photo = new mongoose.model("Photo", photoSchema);
-const Album = new mongoose.model("Album", albumSchema)
-
-
-///Test examples...
-/* const dogPic = new Photo({
-  name: "Photo of dog"
-});
-dogPic.save();
-
-const dailyAlbum = new Album({
-  name: "The Daily",
-  photos: [dogPic]
-});
-dailyAlbum.save(); */
-
 
 //Getters for different pages.
 app.get("/", function(req, res){
@@ -57,8 +32,20 @@ app.get("/gallery", function(req, res){
   res.render("gallery");
 });
 
+
+
+
 // TODO: Getter for speific album pages via Express Routing(TEST & Fix)
+
 app.get("/gallery/:albumName", function(req, res){
+  const albumName = startCase(req.params.albumName);
+  res.render("album", {
+    albumTitle: albumName,
+  });
+
+});
+
+/* app.get("/gallery/:albumName", function(req, res){
   //save requested album name to const
   const albumName = _.capitalize(req.params.albumName);
   Album.findOne({name: albumName}, function(err, foundAlbum){
@@ -73,7 +60,7 @@ app.get("/gallery/:albumName", function(req, res){
       }
     }
   });
-});
+}); */
 
 
 let port = process.env.PORT;
