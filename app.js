@@ -27,6 +27,11 @@ app.get("/", function(req, res){
   res.render("home");
 });
 
+//Get the email contact form
+app.get("/contact", function(req, res){
+  res.render("contact");
+})
+
 /* TODO: Retrofit for Express param routing */
 app.get("/gallery", function(req, res){
   res.render("gallery");
