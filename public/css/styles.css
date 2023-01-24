@@ -135,6 +135,12 @@ a:hover {
   margin: 3% 15%;
 }
 
+.email-div{
+  margin: 2%;
+  padding: 5%;
+  text-align: left;
+}
+
 /* FOOTER SECTIONS */
 #footer-section {
   border-top: 2px solid #C6DE41;
