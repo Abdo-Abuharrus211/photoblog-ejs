@@ -98,6 +98,7 @@ a:hover {
 
 /* SHOWCASE section */
 #showcase-section {
+  padding-bottom: 2.2%;
   border-radius: 1%;
   margin: 2% 2%;
   background-color: #3A8891;
@@ -119,7 +120,7 @@ a:hover {
 .gallery-btn-box{
   z-index: 2;
   position: absolute;
-  top: 80%;
+  bottom: 0;
 }
 
 /* CONTACT SECTION  */
@@ -156,6 +157,7 @@ a:hover {
     text-align: center;
   }
   .banner-text{
+    color: #EDE4E0;
     position: static;
     margin: auto;
   }
